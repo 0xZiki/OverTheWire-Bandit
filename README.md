@@ -24,4 +24,4 @@ Check file status: git status
 View commit history: git log --oneline
 
 🚩 Write-ups & Levels:
-* [Bandit Level 0 ➔ 1](Level_00_to_01.md) *(Concepts: SSH, Basic Navigation, cat)*
+* [Bandit Level 0 ➔ 1](OverTheWire-Bandit/Level_00_to_01.md) *(Concepts: SSH, Basic Navigation, cat)*
