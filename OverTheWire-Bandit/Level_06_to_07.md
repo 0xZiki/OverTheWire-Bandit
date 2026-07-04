@@ -42,7 +42,7 @@ Knowing the path, we can print its content directly:
 ```Bash
 cat <path_to_the_found_file>
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 System-Wide Searching: Searching across the entire OS file system starting from the root directory (/).
 
 Ownership Filtering: Utilizing -user and -group flags to narrow down files based on Linux permission owners.
