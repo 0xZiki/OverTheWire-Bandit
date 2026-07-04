@@ -14,4 +14,3 @@ Dashed Filenames: How Linux commands handle special characters.
 
 Relative Paths: Using ./ to reference the current directory.
 
-* [Bandit Level 1 ➔ 2](OverTheWire-Bandit/Level_01_to_02.md) *(Concepts: Dashed Filenames, Relative Paths)*
