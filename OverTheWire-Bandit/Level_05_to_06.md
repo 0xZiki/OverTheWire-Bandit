@@ -41,7 +41,7 @@ Knowing the path, we can print its content directly:
 ```Bash
 cat <path_to_the_found_file>
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 The find Command: A highly versatile command-line utility used to search for files in a directory hierarchy based on specific criteria like type, size, and permissions.
 
 Logical NOT (!): How to negate search conditions to exclude specific results (e.g., filtering out executable files).
