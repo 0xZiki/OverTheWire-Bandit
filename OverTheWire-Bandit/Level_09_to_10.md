@@ -24,7 +24,8 @@ strings data.txt : Scans the binary file and extracts embedded ASCII strings tha
 grep "==" : Searches through the strings and isolates the exact line containing the multiple = prefix.
 
 Output Analysis: The terminal cleanly bypasses the binary garbage and returns only the line containing the target password right next to the ========== characters.
-🧠 Concepts Learned
+
+## 🧠 Concepts Learned
 Binary vs Text Files: Utilizing the file command to recognize that non-text files (data) require specialized tools instead of raw standard outputs like cat.
 
 The strings Utility: A foundational tool in binary analysis and reverse engineering used to find printable strings in non-text files.
