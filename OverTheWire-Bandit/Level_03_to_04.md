@@ -25,7 +25,7 @@ ls -al
 Bash
 cat ...Hiding-From-You
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 Hidden Files in Linux: Any file prefixing with . is hidden from standard directory listings.
 
 ls -a Flag: Crucial command switch used to audit and view hidden configurations or hidden files.
