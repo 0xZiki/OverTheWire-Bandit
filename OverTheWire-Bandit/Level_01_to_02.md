@@ -9,8 +9,21 @@ Since `-` is interpreted by Linux commands as standard input (stdin), we cannot 
 ```bash
 cat ./- 
 ```
-Concepts Learned
-Dashed Filenames: How Linux commands handle special characters.
+Method 2: Input Redirection (Alternative)
+We can use the < redirection operator to pass the file content directly into the cat command:
 
-Relative Paths: Using ./ to reference the current directory.
+```Bash
+cat < -
+```
+Method 3: Using the rev Command
+The rev utility reverses the characters of lines. Interestingly, it treats - as a normal filename, allowing us to read it (and then we can reverse it back if needed, though for the password it prints it out):
 
+```Bash
+rev - | rev
+```
+🧠 Concepts Learned
+Standard Input (stdin) Symbol: Understanding why - causes commands to wait for keyboard input.
+
+Input Redirection (<): How to force commands to take a file as input.
+
+Alternative CLI Utilities: Leveraging tools like rev or text editors to bypass naming constraints.
