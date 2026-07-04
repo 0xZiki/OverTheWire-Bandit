@@ -22,7 +22,7 @@ cat data.txt | grep millionth
 ```
 Output Analysis: Both methods cleanly bypass the massive text dump and instantly return the exact line containing the word millionth followed by the target password.
 
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 The file Command Utility: Using it beforehand to verify that data.txt is indeed a plain text file (Unicode text, UTF-8 text), which ruled out the need for decompression or decoding tools like gzip, tar, or base64.
 
 The grep Tool: A powerful command-line utility used for searching plain-text data sets for lines that match a regular expression or a specific keyword.
