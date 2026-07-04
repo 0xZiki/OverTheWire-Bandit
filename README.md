@@ -26,3 +26,6 @@ View commit history: git log --oneline
 🚩 Write-ups & Levels:
 * [Bandit Level 0 ➔ 1](OverTheWire-Bandit/Level_00_to_01.md) *(Concepts: SSH, Basic Navigation, cat)*
 * [Bandit Level 1 ➔ 2](OverTheWire-Bandit/Level_01_to_02.md) *(Concepts: Dashed Filenames, Relative Paths)*
+* [Bandit Level 2 ➔ 3](OverTheWire-Bandit/Level_02_to_03.md) *(Concepts: Handling Spaces, Escaping Characters, rev)*
+* [Bandit Level 3 ➔ 4](OverTheWire-Bandit/Level_03_to_04.md) *(Concepts: Hidden Files, ls -al)*
+* [Bandit Level 4 ➔ 5](OverTheWire-Bandit/Level_04_to_05.md) *(Concepts: File Utility, ASCII vs Binary Data, Terminal Reset)*
