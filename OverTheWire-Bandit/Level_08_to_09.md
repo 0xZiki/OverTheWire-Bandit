@@ -21,14 +21,14 @@ sort data.txt : Arranges all lines alphabetically, placing identical lines right
 
 -u (Unique Flag) : Directs uniq to only print lines that are completely unique (appear exactly once) and discard everything else.
 
-⚠️ Critical Analysis: The Importance of the -u Flag
+## ⚠️ Critical Analysis: The Importance of the -u Flag
 During testing, omitting the -u flag (sort data.txt | uniq) changes the behavior drastically:
 
 Without -u: The uniq command acts as a traditional de-duplication tool. It condenses all repeated adjacent lines into a single instance, printing every distinct line found in the file. This leaves you with dozens of unique-looking lines, making it impossible to identify which line was originally the single password.
 
 With -u: It switches uniq into an exclusion filter. It completely suppresses any line that had duplicates, leaving only the single, non-repeated string on the terminal screen.
 
-🧠 Concepts Learned
+##  🧠 Concepts Learned
 Text Sorting (sort): Understanding that uniq relies strictly on adjacent line comparisons, making a prior sort mandatory for system-wide files.
 
 Advanced Uniq Filtering (uniq -u): Isolating unique occurrences rather than just collapsing duplicate clusters.
