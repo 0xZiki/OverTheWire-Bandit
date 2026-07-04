@@ -20,7 +20,8 @@ Alternatively, we can read the encoded text file using cat and pipe the stream d
 cat data.txt | base64 -d
 ```
 Output Analysis: Both commands instantly process the encoded data and print out the decoded cleartext password on the terminal screen.
-🧠 Concepts Learned
+
+## 🧠 Concepts Learned
 Data Encoding vs. Encryption: Understanding that Base64 is a binary-to-text encoding scheme used to safely transport data, not to encrypt or secure it.
 
 Base64 Decoding (-d flag): Learning how to use command-line utilities to reverse encoding layouts and reveal the underlying original payload.
