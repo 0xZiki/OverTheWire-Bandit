@@ -1,4 +1,4 @@
-# OverTheWire Bandit: Level 14 ➡ evel 15
+# OverTheWire Bandit: Level 14 ➡ Level 15
 
 ## 📝 Level Overview
 * **Objective:** Retrieve the next level's password by submitting the current level's password to a specific network port on the local machine.
