@@ -47,7 +47,8 @@ The Lesson: The server restricts internal jumping using SSH keys to enforce exte
 ### ❌ Trap 2: Unprotected Private Key File (The SSH Guard)
 The Mistake: After copying the key to the local machine, attempting to log in immediately or applying an execute flag (chmod +x bandit16_key).
 
-The Error: ```text
+The Error:
+ ```text
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -61,7 +62,8 @@ Save it to a file named bandit16_key on your local personal machine.
 
 Crucial Step: Restrict the file permissions so only your user can read/write it (Read = 4, Write = 2, Execute = 0 ➡️ 600):
 ```Bash
-chmod 600 bandit16_key```
+chmod 600 bandit16_key
+```
 Authenticate to the remote server using the private key over the external game port (2220):
 ```bash
 ssh -i bandit16_key bandit17@bandit.labs.overthewire.org -p 2220
