@@ -16,7 +16,7 @@ First, we scan the target range on `localhost` to filter out open ports from clo
 ```bash
 nmap -p 31000-32000 localhost
 ```
-Result: Discovered 5 open ports: 31046, 31518, 31691, 31790, and 31960.
+- Result: Discovered 5 open ports: 31046, 31518, 31691, 31790, and 31960.
 
 ### Step 2: Service & SSL/TLS Enumeration
 To identify which of these open ports use SSL/TLS encryption, we run Nmap with the ssl-enum-ciphers script:
@@ -24,7 +24,7 @@ To identify which of these open ports use SSL/TLS encryption, we run Nmap with t
 ```Bash
 nmap -p 31046,31518,31691,31790,31960 --script ssl-enum-ciphers localhost
 ```
-Result: Confirmed which ports utilize valid SSL/TLS cipher suites (e.g., TLSv1.2/TLSv1.3).
+- Result: Confirmed which ports utilize valid SSL/TLS cipher suites (e.g., TLSv1.2/TLSv1.3).
 
 ### Step 3: Evading the Echo Traps & Extracting the Key
 We use ncat with the --ssl flag to establish an encrypted tunnel.
@@ -39,13 +39,13 @@ ncat --ssl localhost 31790
 ## 🚧 Upon entering the password (kS0Hf...), the server responded with Correct! and printed an OpenSSH Private Key.
 Pitfalls, Traps, and Solutions (The Real Learning)
 ### ❌ Trap 1: The Localhost Block
-The Mistake: Trying to connect to bandit17 using the private key from within the bandit16 session via localhost on port 2220 or port 22.
+- The Mistake: Trying to connect to bandit17 using the private key from within the bandit16 session via localhost on port 2220 or port 22.
 
-The Error: !!! Connecting from localhost is blocked to conserve resources. or !!! You are trying to log into this SSH server on port 22, which is not intended.
+- The Error: !!! Connecting from localhost is blocked to conserve resources. or !!! You are trying to log into this SSH server on port 22, which is not intended.
 
-The Lesson: The server restricts internal jumping using SSH keys to enforce external client connections. The credential received is an Asymmetric Private Key, which means it must be extracted and used from an external machine (your personal client).
+- The Lesson: The server restricts internal jumping using SSH keys to enforce external client connections. The credential received is an Asymmetric Private Key, which means it must be extracted and used from an external machine (your personal client).
 ### ❌ Trap 2: Unprotected Private Key File (The SSH Guard)
-The Mistake: After copying the key to the local machine, attempting to log in immediately or applying an execute flag (chmod +x bandit16_key).
+- The Mistake: After copying the key to the local machine, attempting to log in immediately or applying an execute flag (chmod +x bandit16_key).
 
 The Error:
  ```text
@@ -54,7 +54,7 @@ The Error:
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Permissions 0711 for 'bandit16_key' are too open.
 ```
-The Lesson: SSH has strict security policies. A Private Key file contains highly sensitive data and MUST NOT be accessible by anyone other than the owner. Adding an execute flag (+x) changes permissions to 0711 which breaks this security rule.
+- The Lesson: SSH has strict security policies. A Private Key file contains highly sensitive data and MUST NOT be accessible by anyone other than the owner. Adding an execute flag (+x) changes permissions to 0711 which breaks this security rule.
 ### 🔑 The Correct Path to Access Level 17
 Copy the entire private key block from -----BEGIN OPENSSH PRIVATE KEY----- to -----END OPENSSH PRIVATE KEY-----.
 
