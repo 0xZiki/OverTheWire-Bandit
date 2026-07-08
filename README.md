@@ -39,3 +39,12 @@ View commit history: git log --oneline
 * [Bandit Level 12 → 13](OverTheWire-Bandit/Level_12_to_13.md) *(Concepts: Reverse Engineering Hex Dumps (`xxd`), Multi-layered Decompression (`gzip`, `bzip2`, `tar`)*
 * [Bandit Level 13 → 14](OverTheWire-Bandit/Level_13_to_14.md) *(Concepts: Key-Based SSH Authentication, File Permissions (`chmod 600`), Cryptographic Error Troubleshooting, Data Exfiltration )*
 * [Bandit Level 14 → 15](OverTheWire-Bandit/Level_14_to_15.md) *(Concepts: Networking Basics, Localhost/Loopback (`127.0.0.1`), Network Ports, Raw Socket Data Transmission using Netcat (`nc`))*
+* [Bandit Level 15 → 16](OverTheWire-Bandit/Level_15_to_16.md) *(Concepts: SSL/TLS Encryption, `openssl s_client` Connections)*
+* [Bandit Level 16 → 17](OverTheWire-Bandit/Level_16_to_17.md) *(Concepts: Port Scanning with `nmap`, SSL Service Identification, Private Key Handling)*
+* [Bandit Level 17 → 18](OverTheWire-Bandit/Level_17_to_18.md) *(Concepts: File Comparison with `diff`, Investigating Modified Files)*
+* [Bandit Level 18 → 19](OverTheWire-Bandit/Level_18_to_19.md) *(Concepts: SSH Command Execution, Bypassing Modified/Restricted Shells)*
+* [Bandit Level 19 → 20](OverTheWire-Bandit/Level_19_to_20.md) *(Concepts: SUID/SetUID Binaries, Executing Files as Another User)*
+* [Bandit Level 20 → 21](OverTheWire-Bandit/Level_20_to_21.md) *(Concepts: Netcat Listening Mode, Inter-Process Communication, Backgrounding Jobs `&`)*
+* [Bandit Level 21 → 22](OverTheWire-Bandit/Level_21_to_22.md) *(Concepts: Linux Cron Jobs, Scheduled Task Analysis, Inspecting `/etc/cron.d`)*
+* [Bandit Level 22 → 23](OverTheWire-Bandit/Level_22_to_23.md) *(Concepts: Shell Script Reversing, MD5 Hashing, Dynamic/Predicted Paths)*
+* [Bandit Level 23 → 24](OverTheWire-Bandit/Level_23_to_24.md) *(Concepts: Executing Arbitrary Shell Scripts via Insecure Spool Directory)*
