@@ -48,3 +48,13 @@ View commit history: git log --oneline
 * [Bandit Level 21 → 22](OverTheWire-Bandit/Level_21_to_22.md) *(Concepts: Linux Cron Jobs, Scheduled Task Analysis, Inspecting `/etc/cron.d`)*
 * [Bandit Level 22 → 23](OverTheWire-Bandit/Level_22_to_23.md) *(Concepts: Shell Script Reversing, MD5 Hashing, Dynamic/Predicted Paths)*
 * [Bandit Level 23 → 24](OverTheWire-Bandit/Level_23_to_24.md) *(Concepts: Executing Arbitrary Shell Scripts via Insecure Spool Directory)*
+* [Bandit Level 24 → 25](OverTheWire-Bandit/Level_24_to_25.md) *(Concepts: Network Bruteforce Scripting, Bash For-Loops, Multiple Port Iteration)*
+* [Bandit Level 25 → 26](OverTheWire-Bandit/Level_25_to_26.md) *(Concepts: Non-Standard Shell Infiltration, Text Editors inside SSH, Overriding Default Logins)*
+* [Bandit Level 26 → 27](OverTheWire-Bandit/Level_26_to_27.md) *(Concepts: Custom Interactive Shell Interception, Command Invocation Evasion)*
+* [Bandit Level 27 → 28](OverTheWire-Bandit/Level_27_to_28.md) *(Concepts: Source Code Repository Auditing, Git over SSH, Secret Leakage)*
+* [Bandit Level 28 → 29](OverTheWire-Bandit/Level_28_to_29.md) *(Concepts: Git Commit History Forensic Review, Code Diffing using `git show`)*
+* [Bandit Level 29 → 30](OverTheWire-Bandit/Level_29_to_30.md) *(Concepts: Remote Branch Enumeration, Detached HEAD States, Multi-branch Security)*
+* [Bandit Level 30 → 31](OverTheWire-Bandit/Level_30_to_31.md) *(Concepts: Git Tag Objects Analysis, Release-based Target Credential Extraction)*
+* [Bandit Level 31 → 32](OverTheWire-Bandit/Level_31_to_32.md) *(Concepts: CI/CD Deployment Overrides, Bypassing `.gitignore` Restrictions via Force-Staging)*
+* [Bandit Level 32 → 33](OverTheWire-Bandit/Level_32_to_33.md) *(Concepts: Restricted Shell Evasion, Positional Parameters Subversion using `$0`)*
+* [Bandit Level 33 → 34](OverTheWire-Bandit/Level_33_to_34.md) *(Concepts: Mission Accomplished, Full-Stack Linux Security Framework Verification)*
